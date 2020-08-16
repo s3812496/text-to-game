@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     background-color: rgb(192, 192, 192);
@@ -63,3 +63,27 @@ object{
     margin-left: auto;
     margin-right: auto;
 }
+
+#Nathan{ 
+    Color: #000000; 
+} 
+
+#Nicholas{ 
+    Color: #ff0000; 
+} 
+
+#Jack{ 
+    Color: #008e00; 
+} 
+
+#Carlin{ 
+    Color: #92ffaa; 
+} 
+
+#Anthony{ 
+    Color:  #0000ff; 
+} 
+
+#Anh { 
+    Color: #ffa500; 
+} 
