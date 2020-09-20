@@ -2,10 +2,52 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>EVF1</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
+<header>
+	<nav>
+		<a href="index.html">HOME</a>
+		<a href="mvf1.html">MVF1</a>
+		<a href="mvf2.html">MVF2</a>
+		<a href="mvf3.html">MVF3</a>
+		<a href="mvf4.html">MVF4</a>
+		<a href="mvf5.html">MVF5</a>
+		<a href="diagrams.html">EVF1</a>
+		<a href="resurces&tools.html">Resources and Tools</a>
+	</nav>
+</header>
 <body>
+	<div>
+		<h1>EVF-1 Saving File for reader</h1>
+		<h2>Description of EVF-1</h2>
+		<ul>
+			<li>When reading the stories created by users, the program should save where in the story the reader is and what choices have been made so far. </li>
+			<li>We will test whether the chapter automatically saves into our database. This will also test whether the saves will automatically overwrite and save any previous progress. </li>
+		</ul>
+		<h2>User Story</h2>
+		<p>As a creator using Text-to-Game, I should be able to confirm that my program saves where the reader last was and what choices have been made so far when they are playing the game. The users playing my game should not have to start from the very beginning each time they want to play. When they play a game made by Text-to-Game, there should be a correct sense of time and progression.  
+		</p>
+		<h2>Design Diagrams</h2>
+		<img src="assets/Anh - Design Diagram 1.png" width="100%">
+		<img src="assets/Anh - Design Diagram 2.png" width="100%">
+		<h2>Lucid Textual Explanation</h2>
+		<p>When playing a chapter as a player, the autosave feature will periodically save the user’s progress. This feature helps to minimise data loss and attempts to recover game progress in case of a system failure or crash. The autosave feature creates a save state periodically/upon every change within the game and stores it into a database. When the user continues playing the game, the game retrieves the stored data and loads the most recent save state. It is important that a system reliably functions as intended and that information being stored and retrieved correctly. 
+		</p>
+		<img src="assets/Anh - Lucid Textual Explaination Diagram 3.png" width="100%">
+		<img src="assets/Anh - Lucid Textual Explaination Diagram 4.png" width="100%">
+		<h2>Validation Testing</h2>
+		<ul>
+			<li>The program correctly stores data into the save file where the reader last was and their previous choices within the game</li>
+			<li>he program periodically overwrites to the save file</li>
+			<li>The program correctly retrieves information from the save file, loading the it and displaying the game</li>
+			<li>The program automatically saves when closed</li>
+		</ul>
+		<h2>Estimation Justifications</h2>
+		<ul>
+			<li>I still lack experience with using JavaScript, so I need to account for the time to get a foundation based around saving and loading data.</li>
+			<li>I assume that a minimum of 32 estimated hours is needed to finish this task without assistance from group members. I need to make sure with that my coding parts integrate and function with the rest of my group.  This may cause some trial and error</li>
+		</ul>
+	</div>
 </body>
 </html>
