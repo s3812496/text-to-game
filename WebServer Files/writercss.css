@@ -1,3 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
+body{
+	background-color: #00BBFF;
+	
+}
 
+div{
+	background-color: #D7F5FF;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+a:visited, a{
+	text-decoration: none;
+	color:black;
+	padding: 20px;
+	margin: 15px;
+	background-color: lightgrey;
+	text-align: center;
+	align-content: center;
+}
