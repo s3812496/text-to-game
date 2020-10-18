@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Future Development</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+	<nav>
+		<a href="index.html">Project Background</a>
+		<a href="project_progress.html">Project Progress</a>
+		<a href="challenges.html">Challenges and Learning</a>
+		<a href="processes.html">Project Processes</a>
+		<a href="dev.html">Future Development</a>
+	</nav>	
+</header>
+		
+<body>
+	<div>
+		<h1>Future Development</h1>
+		<h2>Project Manager</h2>
+		<p>Leadership is a key skill that is vital to any type of long-term project. Although there is typically a single person that takes charge, anyone can display leadership through their actions. A leader should be decisive and increase the morale of their peers while being knowledgeable and reliable. The presence of a great leader increases the likelihood of a consistent rate of commendable work. In contrast, a leader that shows no commitment or motivation to a project will see that their own attitude will reflect in their colleagues. As a result, a leader or one that takes a lead project role would be the first person that I would employ to take the project to the next phase.</p>
+		
+		<h2>Programmer</h2>
+		<p>Without technical expertise, there is no possible way to advance the project to the next stage to a high standard. Competence in programming languages such as Java, Python, or C++ will undeniably play an essential role in developing the project. A programmer would then have to be employed to do the backend programming of the project.</p>
+		
+		<h2>Graphical User Interface Designer</h2>
+		<p>A graphical user interface designer is also an essential part of the project as they can dictate how the program would look to the end user. Making sure that the project is user friendly and easy to understand is an important aspect of any project to ensure that the end project is able to be used effectively</p>
+		
+		<h2>Team Member</h2>
+		<p>A team member who has critical problem solving skills would also be useful in this kind of project. They must also be able to think innovatively and contribute to the group with their opinions to make the group project better.  To be able to think innovatively is an important skill in recognising how certain ideas can potentially revolutionise how users interact with the further developed application. Whether it be brainstorming a completely new idea or improving existing features, inventive thinking will ultimately bolster the user experience.</p>
+	</div>
+	
+	<div>
+		<h2>EVF-1 Saving File for Reader</h2>
+		
+		<h3>Description of EVF-1</h3>
+		
+		<ul>
+			<li>When reading the stories created by users, the program should save where in the story the reader is and what choices have been made so far.</li>
+			<li>We will test whether the chapter automatically saves into our database. This will also test whether the saves will automatically overwrite and save any previous progress.</li>
+		</ul>
+		
+		<h3>User Story</h3>
+		<p>As a creator using Text-to-Game, I should be able to confirm that my program saves where the reader last was and what choices have been made so far when they are playing the game. The users playing my game should not have to start from the very beginning each time they want to play. When they play a game made by Text-to-Game, there should be a correct sense of time and progression.</p>
+		
+		<h3>Lucid Textual Explanation</h3>
+		<p>When playing a chapter as a player, the autosave feature will periodically save the user’s progress. This feature helps to minimise data loss and attempts to recover game progress in case of a system failure or crash. The autosave feature creates a save state periodically/upon every change within the game and stores it into a database. When the user continues playing the game, the game retrieves the stored data and loads the most recent save state. It is important that a system reliably functions as intended and that information is stored and retrieved correctly.</p>
+		
+		<h3>Design Diagrams</h3>
+		
+		<img src="assets/EVF-1.PNG">
+		<br>
+		<img src="assets/EVF-1(2).PNG">
+		<br>
+		
+		<h3>Validation Testing</h3>
+		
+		<ul>
+			<li>The program correctly stores data into the save file where the reader last was and their previous choices within the game</li>
+			<li>The program periodically overwrites to the save file</li>
+			<li>The program correctly retrieves information from the save file, loading the it and displaying the game</li>
+			<li>The program automatically saves when closed</li>
+		</ul>
+		
+		<h3>Estimation Justifications</h3>
+		<ul>
+			<li>I still lack experience with using JavaScript, so I need to account for the time to get a foundation based around saving and loading data.</li>
+			<li>I assume that a minimum of 32 estimated hours is needed to finish this task without assistance from group members. I need to make sure that my coding parts integrate and function with the rest of my group. This may cause some trial and error</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h2>EVF-2 Inserting Custom Images</h2>
+		
+		<h3>User Stories</h3>
+		<p>As an author, I want to be able to insert images whilst creating my text-to-game. Being able to insert images allows for extra immersion from the player as they can visually see what is happening within the game. Inserting custom images would be a vital function due to the customizable and limitless options available to myself, the author.</p>
+		
+		<h3>Lucid Textual Explanation</h3>
+		<p>Inserting custom images for the user to see allows the player to visually capture what the game is telling them. Although text-to-game is a simple text-based game where the player progresses based on choosing their path via text options, the functionality to visually see what their paths come to fruition is a feature that we would like to implement into text-to-game. The author would be able to insert their own images into text-to-game whilst they are creating their game and the users would therefore be able to view these images once they arrive at that specific level. The author can dictate what images are shown and when they’d like to show the image. For example, if the player were to choose between buying a sword or a bow, there should be an image for both depending on what the player would like to purchase.</p>
+		
+		<h3>Validation Testing</h3>
+		<p>There are many different validation methods that must be followed to ensure that the program is working properly in text-to-game. For example, if custom images were to be inserted by the author, the image would have to have the correct resolution and size for the program to work effectively. There would have to be a system of standardization and consistency within most of the images to ensure that each stage and level maintains visual quality. As a result, the text-to-game program would preferably have an alert to tell the author what the minimum size or resolution must be for text-to-game to function effectively. This validation would occur after the author has inserted their custom image and if it is not aligned with the system’s standards, an alert would appear notifying the user. Furthermore, the image must be in the correct format which is typically the jpeg format. The jpeg format is the most used format with regards to images and the author would be notified if their image file was not compatible with the text-to-game program.</p>
+		
+		<h3>Validation Criteria</h3>
+		<ul>
+			<li>Are the image resolutions consistent throughout the program?</li>
+			<li>Does the image need to be scaled?</li>
+			<li>Does pressing the ‘Insert Image’ button work?</li>
+			<li>Is the image compatible?</li>
+			<li>Does the image resolution fit the program?</li>
+			<li>Can images be deleted?</li>
+			<li>Is there a limit to how many images can be inserted?</li>
+		</ul>
+		
+		<h3>Diagrams</h3>
+		<img src="assets/EVF-2.PNG">
+		<br>
+	</div>
+	
+	<div>
+		<h2>Story</h2>
+		<p>This example utilises all of the core functionalities of our program in that it allows users to choose their pathways and endings. This demonstration was designed for a construction company to teach new apprentices the importance of safety while working the job. This example shows how the program is able to give users options to choose from if it is required from the story, the outcomes of those actions and the flow between chapters. This also showcases how 2 chapters can extend into multiple different pathways with minimal limitations.</p>
+		
+		<h3>Chapter 1</h3>
+		<p>A new apprentice named Hairy Jack has joined the workforce and will be commencing his first shift next week. He has discovered that his carry bag can only hold enough room for his essential equipment and can’t decide what he doesn’t need to bring to work. Can you help Hairy Jack decide what he doesn’t need to pack in his bag for him?</p>
+		<p>1: High visibility clothes</p>
+		<p>2: Helmet</p>
+		<p>3: Coffee</p>
+		
+		<h3>If 1 or 2 was selected:</h3>
+		<p>Hairy Jack has now packed his bags and is ready to go to work. He arrives to his first shift where he is greeted to punishment for forgetting his essential work equipment. Hairy Jack has now been sent home as a result of his actions. Hairy Jack no longer wants your help.</p>
+		
+		<p>Story finished.</p>
+		
+		<h3>If 3 was selected:</h3>
+		<p>Hairy Jack has now packed his bags and is ready to go to work. He arrives at his first shift where he is congratulated by his boss for packing all the required equipment and is rewarded with a coffee.</p>
+		<p>Next Chapter.</p>
+		
+		<h3>Chapter 2</h3>
+		<p>While Hairy Jack consumes his coffee, he soon trips over his shoelaces and spills his coffee all over the floor at the construction site. Jack doesn’t want to get into trouble, so he decides to clean it up himself without telling his boss. You notice Hairy Jack tripping over and spilling his coffee but can’t decide how to help. You are required to act in an effective manner that will benefit the team.</p>
+		<p>1: Help clean up the coffee</p>
+		<p>2: Tell your safety manager</p>
+		<p>3: Tell your boss</p>
+		
+		<h3>If 2 or 3 was selected</h3>
+		<p>Notifying anyone in charge of any safety hazards is required of you, thus telling either your safety manager or boss about the accident is a suitable approach. You are both rewarded with coffee and no one was injured.</p>
+		<p>Story Ends</p>
+		
+		<h3>If 1 was selected</h3>
+		<p>You have chosen to not notify your team about the accident, your boss notices the spill and approaches you both with a look of confusion. You are greeted with a stern face while your boss asks, “Why haven’t I been notified about this incident?” You and hairy Jack look at each other, then back at the boss. What do you do?</p>
+		<p>1: Lie and say we were going to notify the boss</p>
+		<p>2: Apologise for acting unprofessionally</p>
+		<p>3: Bribe the boss to walk away</p>
+		
+		<h3>If 1 was selected</h3>
+		<p>Your boss doesn’t detect that you lied to him and reminds you of the importance of notifying the leadership team about any safety hazards at all times.</p>
+		<p>Story Finished.</p>
+		
+		<h3>If 2 was selected</h3>
+		<p>Your boss accepts your apology and reminds you both of the importance of notifying the leadership team about any safety hazards at all times.</p>
+		<p>Story Finished.</p>
+		
+		<h3>If 3 was selected</h3>
+		<p>You are fired.</p>
+		<p>Story Finished.</p>
+	</div>
+</body>
+</html>
