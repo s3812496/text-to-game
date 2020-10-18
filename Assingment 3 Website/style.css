@@ -64,3 +64,20 @@ object{
     margin-right: auto;
 }
 
+table, hd, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+ 
+
+hd, td {
+  padding: 15px;
+}
+
+ 
+
+td {
+  text-align: left;
+}
+
